@@ -9,3 +9,11 @@ Este conjunto de dados contém transações com cartão de crédito feitas por t
 - V1-V28 - Atributos anonimizados representando várias características da transação (ex.: tempo, localização, etc.).
 - Amount - Valor da transação.
 - Class - Rótulo binário indicando se a transação é fraudulenta (1) ou não (0).
+
+### 📈 Modelagem
+
+- ##### Modelo Principal: Regressão Logística
+- ##### Ajuste de Limiar: Reduzido para aumentar a sensibilidade e detectar mais fraudes
+- ##### Avaliação: Acurácia, Precisão, Recall, F1-score e Matriz de Confusão
+
+No código desenvolvido, foi realizado a análise exploratória dos dados, verificando distribuições e padrões. Em seguida, foram aplicadas técnicas de pré-processamento, como normalização. Para a modelagem, foi utilizado um modelo de regressão logística, ajustando o limiar de decisão para aumentar a sensibilidade na detecção de fraudes. Por fim, foram geradas métricas de avaliação, incluindo matriz de confusão, e visualizações gráficas para interpretação dos resultados.
